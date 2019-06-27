@@ -14,5 +14,7 @@ COPY public/    .
 COPY ./app/assets/ /app/app/assets
 RUN rake assets:precompile
 
+RUN nocommand
+
 # copy the rest of the app
 COPY . .
